@@ -55,7 +55,7 @@ Page({
       arrObj: this.data.arrObj
     })
   },
-  getMusicInfo() {
+  getMusicInfo() {    //测试tcb-router
     wx.cloud.callFunction({
       name: 'tcbRouter',
       data: {
@@ -65,7 +65,7 @@ Page({
       console.log(res)
     })
   },
-  getMovieInfo() {
+  getMovieInfo() {  //测试tcb-router
     wx.cloud.callFunction({
       name: 'tcbRouter',
       data: {
@@ -121,7 +121,7 @@ Page({
       }, 2000)
     }, 1000) */
 
-    // promise 
+    // 测试es6 romise 
     /* 
       pending
       fulfilled
@@ -181,20 +181,20 @@ Page({
       }
     }) */
 
-    console.log('testData 开始:' + this.data.testData)
-    this.setData({
-      testData: 1
-    }, () => {
-      console.log('回调执行')
-    })
-    console.log('testData 设置后:' + this.data.testData)
+    // console.log('testData 开始:' + this.data.testData)
+    // this.setData({
+    //   testData: 1
+    // }, () => {
+    //   console.log('回调执行')
+    // })
+    // console.log('testData 设置后:' + this.data.testData)
 
-    for (let i = 0; i < 10000; i++) {
-      for (let j = 0; j < 10000; j++) {
+    // for (let i = 0; i < 10000; i++) {
+    //   for (let j = 0; j < 10000; j++) {
 
-      }
-    }
-    console.log('testData 长耗时:' + this.data.testData)
+    //   }
+    // }
+    // console.log('testData 长耗时:' + this.data.testData)
 
 
 

@@ -1,5 +1,7 @@
 # 微信小程序云开发-从0打造云音乐全栈小程序
 
+本项目以云音乐实战项目为例，是横跨小程序端、云开发后端、后台管理系统的一站式云开发小程序全栈项目。使用小程序组件化开发打造小程序前端部分，使用小程序云开发打造小程序后端部分，通过后台管理系统访问云开发资源实现对项目中数据及文件的管理。通过这门课程的学习可以使你深刻理解小程序开发的全部技能点，具备独立开发完整的微信小程序的能力。
+
 ## 云开发官方文档
 
 https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html
@@ -20,9 +22,11 @@ https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.h
 
 - 并在getPlaylist进行   
 
+  ```
   npm install --save request
-
+  
   npm install --save request-promise
+  ```
 
 - 进行代码编写，后要点击上传云函数右键getPlaylist文件夹，点击上传并部署
 
@@ -36,12 +40,19 @@ https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.h
 ### 2.1 从云数据库取出歌单列表显示到界面
 
 - 实现触底加载更多歌单
+
 - 刷新获取最新歌单
 
 - 在云函数music下安装 
 
-  npm install --save request
-
+  ```
+npm install --save request
   npm install --save request-promise
+npm install --save tcb-router
+  //为什么使用tcb-router
+  //1.一个用户在一个云环境只能创建50个云函数
+  //2.相似的请求归类到同一个云函数处理
+  //3.tcb-router是一个koa风格的云函数路由库
+  ```
 
-  npm install --save tcb-router
+<img src=".\doc_res\koa.jpg" alt="koa" style="zoom:80%;" />
