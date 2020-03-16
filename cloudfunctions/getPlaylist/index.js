@@ -11,7 +11,7 @@ const playlistCollection = db.collection('playlist') //云数据库playlist集�
 
 const URL = 'http://musicapi.xiecheng.live/personalized'
 
-const MAX_LIMIT = 10
+const MAX_LIMIT = 100
 
 // 云函数入口函数
 exports.main = async(event, context) => {
@@ -58,7 +58,7 @@ exports.main = async(event, context) => {
     await playlistCollection.add({ //写入到云数据库  注意加await 
       data: {
         ...newData[i], //ES6扩展运算符
-        createtime: db.serverDate(), //存入云数据库的服务器时间，利于后面的排序
+        createTime: db.serverDate(), //存入云数据库的服务器时间，利于后面的排序
       }
     }).then((res) => {
       console.log('插入成功')
