@@ -89,7 +89,8 @@ Page({
       name: 'music',
       data: {
         start: this.data.playlist.length,    //请求起始点
-        count: MAX_LIMIT                    //请求条数
+        count: MAX_LIMIT,                    //请求条数
+        $url: 'playlist' //路由到music的playlist中间件
       }
     }).then((res) => {
       // console.log(res)
