@@ -86,7 +86,7 @@ Page({
       title: '加载中',
     })
     wx.cloud.callFunction({
-      name: 'music',
+      name: 'music',  // 云函数名
       data: {
         start: this.data.playlist.length,    //请求起始点
         count: MAX_LIMIT,                    //请求条数

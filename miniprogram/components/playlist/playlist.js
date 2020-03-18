@@ -1,7 +1,7 @@
 // components/playlist/playlist.js
 Component({
   /**
-   * 组件的属性列表
+   * 组件的属性列表  传给组件的参数
    */
   properties: {
     playlist:{
@@ -22,7 +22,7 @@ Component({
 
 
   /**
-   * 组件的初始数据
+   * 组件的初始数据   组件内部自己的参数
    */
   data: {
     _count: 0
@@ -32,6 +32,17 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    /**
+     * 进入歌曲列表
+     */
+    goToMusiclist(){
+      wx.navigateTo({
+        url: `../../pages/musiclist/musiclist?playlistId=${this.properties.playlist.id}`, //es模板字符串拼接
+      })
+    },
+    /**
+     * 数据格式化
+     */
     _tranNumber(num, point) {
       let numStr = num.toString().split('.')[0]             //取整
       if (numStr.length < 6) {

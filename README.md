@@ -55,4 +55,19 @@ npm install --save tcb-router
   //3.tcb-router是一个koa风格的云函数路由库
   ```
 
+### 2.2 创建歌曲列表组件，并实现歌曲列表功能
+
+- 点击某歌单进入歌单详情
+
 <img src=".\doc_res\koa.jpg" alt="koa" style="zoom:80%;" />
+
+## 小结
+
+
+
+<img src=".\doc_res\1.jpg" alt="1" style="zoom:80%;" />
+
+<img src=".\doc_res\2.jpg" alt="2" style="zoom:80%;" />
+
+<img src=".\doc_res\3.jpg" alt="3" style="zoom:80%;" />
+
