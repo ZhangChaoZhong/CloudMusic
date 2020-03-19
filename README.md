@@ -71,3 +71,8 @@ npm install --save tcb-router
 
 <img src=".\doc_res\3.jpg" alt="3" style="zoom:80%;" />
 
+## 三、播放界面，以及播放功能的实现
+
+### 3.1 播放界面player的控制面板，唱片的实现
+
+### 3.2 播放，暂停，上一曲，下一曲功能的实现
